@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infoform</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 15px 30px;
+            border: black;
+
+        }
+        .container{
+            background-color: rgb(230, 223, 223);
+            padding: 10px;
+            border:black;
+            border-radius: 4px;
+        }
+        input[type="text"],input[type='number'],textarea{
+            width:100%;
+            padding:8px;
+            border:4px solid gainsboro;
+        }
+        button{
+            width:20%;
+            background-color:rgb(116, 116, 233);
+            text-align: center;
+            color:#fff;
+            border:none;
+            height:10%;
+        }
+        .heading{
+            font-weight: bold;
+            font-size: larger;
+        }
+        button:hover{
+            background-color: maroon;
+            cursor:grab;
+        }
+    </style>
+    <script>
+        function confirm()
+        {
+            alert("Form is successfully submited");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form name="Personal information">
+          <center> <label class="heading">Personal information</label></center><br><br><br>
+          <label> First Name</label>
+          <input type="text" placeholder="CAPPITAL LETTERS" required>
+          <br><br>
+          <layout>Last Name></layout>
+          <input type="text" placeholder="CAPITAL LETTERS" required><br>
+          <label>Phone</label>
+          <input type="number" maxlength="10" placeholder="enter 10 digit mobile number" required><br><br>
+          <label>gender</label><br>
+          <label>male</label><input type="radio"><br>
+          <labe>female</labe><input type="radio"><br><br>
+          <bt><label>Purpose</label><br>
+         <textarea rows="5" cols="20" placeholder="enter address" required></textarea>
+         <br><label>Institute name</label><br>
+         <input type="text"><br>
+         <label>Stream</label><br>
+         <input type="radio"><label>Sciences</label><br>
+         <input type="radio"><label>Engineering</label><br>
+         <input type="radio"><label>commerce</label><br>
+         <input type="radio"><label>Arts</label>
+         <br>
+         <center><button type="submit" onclick="confirm()">Submit</button></center>
+        </form>
+    </div>
+</body>
+</html>
